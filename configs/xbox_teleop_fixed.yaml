@@ -1,0 +1,23 @@
+teleop_twist_joy:
+  ros__parameters:
+    require_enable_button: true
+    
+    # Try different axis mappings
+    axis_linear:
+      x: 1  # Usually left stick vertical
+    axis_angular:
+      yaw: 0  # Usually left stick horizontal
+    
+    # Speed settings
+    scale_linear:
+      x: 0.3  # Moderate forward speed
+    scale_linear_turbo:
+      x: 0.6  # Faster with turbo
+    scale_angular:
+      yaw: 0.8  # Turn rate
+    scale_angular_turbo:
+      yaw: 1.5  # Faster turns
+    
+    # Button mappings (try different buttons)
+    enable_button: 4  # LB
+    enable_turbo_button: 5  # RB

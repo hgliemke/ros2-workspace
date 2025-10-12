@@ -1,0 +1,25 @@
+/**:
+  ros__parameters:
+    # Axis mappings
+    axis_linear: {x: 1}
+    axis_angular: {yaw: 0}
+    
+    # Speed settings
+    scale_linear: {x: 0.3}
+    scale_linear_turbo: {x: 0.6}
+    scale_angular: {yaw: 1.0}
+    scale_angular_turbo: {yaw: 1.5}
+    
+    # Button mappings
+    enable_button: 4
+    enable_turbo_button: 5
+    require_enable_button: true
+    
+    # QoS settings for Create3 compatibility
+    qos_overrides:
+      /putin/cmd_vel:
+        publisher:
+          reliability: best_effort
+          durability: volatile
+          history: keep_last
+          depth: 10
